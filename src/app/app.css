@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root{
+  --card-bg: #ffffff;
+  --card-radius: 12px;
+  --card-shadow: 0 6px 18px rgba(16,24,40,0.08);
+  --gap: 16px;
+  --padding: 16px;
+  --font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+}
+
+html, body {
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Card container */
+.card{
+  display: flex;
+  gap: var(--gap);
+  padding: var(--padding);
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  align-items: stretch; /* make children equal height */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Make web components behave like block-level boxes that can size correctly */
+.card app-map,
+.card app-summary {
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Layout proportions: map bigger than summary */
+.card__map{
+  flex: 2 1 60%;    /* grow, shrink, base */
+  min-width: 200px; /* prevent it from collapsing too small */
+  border-radius: 8px;
+  overflow: hidden; /* clip internal map canvas */
+}
+
+/* Summary side */
+.card__summary{
+  flex: 1 1 35%;
+  min-width: 160px;
+  border-radius: 8px;
+  padding: 12px; /* internal spacing for summary */
+  background: rgba(0,0,0,0.03);
+}
+
+/* Small screens: stack vertically */
+@media (max-width: 720px){
+  .card{
+    flex-direction: column;
+  }
+  .card__map,
+  .card__summary{
+    flex: none;
+    width: 100%;
+  }
+  .card__summary{
+    margin-top: 8px;
+  }
+}
+
+/* Optional micro-interactions */
+.card:hover{
+  transform: translateY(-2px);
+  transition: transform 180ms ease;
+}

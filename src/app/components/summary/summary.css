@@ -1,0 +1,70 @@
+:host {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Card wrapper */
+div {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.1);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+/* Title */
+h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Municipality name */
+h3 {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* "Tasks" title */
+h4 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+/* Mayor line */
+p {
+  font-size: 0.95rem;
+  margin: 6px 0 12px;
+  color: #374151;
+}
+
+/* Tasks list */
+ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+li strong {
+  color: #111827;
+}
+
+/* Error message (overrides inline style if you want) */
+.error {
+  color: #dc2626;
+  font-weight: 600;
+}

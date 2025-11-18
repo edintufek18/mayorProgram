@@ -1,0 +1,81 @@
+/* Base SVG styling */
+svg {
+  baseprofile: tiny;
+  fill: #6f9c76;
+  height: 793px;
+  stroke: #ffffff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 0.5px;
+  version: 1.2;
+  viewbox: 0 0 1000 793;
+  width: 1000px;
+}
+
+/* Features group styling */
+#features {
+  cursor: pointer;
+}
+
+/* Individual municipality paths */
+#MK312, #MK313, #MK303, #MK607, #MK604, #MK301, #MK310, #MK304, 
+#MK509, #MK408, #MK406, #MK403, #MK410, #MK401, #MK405, #MK104, 
+#MK507, #MK508, #MK501, #MK704, #MK816, #MK805, #MK811, #MK606, 
+#MK608, #MK601, #MK603, #MK702, #MK705, #MK706, #MK703, #MK203, 
+#MK207, #MK201, #MK208, #MK605, #MK602, #MK308, #MK307, #MK812, 
+#MK808, #MK817, #MK803, #MK815, #MK814, #MK503, #MK504, #MK506, 
+#MK109, #MK107, #MK106, #MK804, #MK505, #MK502, #MK801, #MK813, 
+#MK809, #MK209, #MK210, #MK802, #MK806, #MK311, #MK810, #MK105, 
+#MK108, #MK102, #MK701, #MK807, #MK205, #MK211, #MK206, #MK204, 
+#MK101, #MK103, #MK202, #MK402, #MK409, #MK404, #MK407, #MK609 {
+  cursor: pointer;
+  fill: #6f9c76;
+  stroke: #ffffff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 0.5px;
+}
+
+/* Points styling */
+circle {
+  fill: #6f9c76;
+  stroke: #ffffff;
+  stroke-width: 0.5px;
+}
+
+/* Label points styling */
+#label_points circle {
+  fill: #6f9c76;
+  stroke: #ffffff;
+  stroke-width: 0.5px;
+}
+
+/* Tooltip styling */
+.tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  pointer-events: none;
+  z-index: 1000;
+  max-width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effects for municipalities */
+#features path:hover {
+  fill: #5a8a65;
+  stroke-width: 1px;
+}
+
+/* Responsive design */
+@media (max-width: 1000px) {
+  svg {
+    width: 100%;
+    height: auto;
+  }
+}
+

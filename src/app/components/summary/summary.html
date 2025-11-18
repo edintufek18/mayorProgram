@@ -1,0 +1,18 @@
+<!-- src/app/components/summary/summary.component.html -->
+<div>
+  <h2>Municipality Summary</h2>
+
+  <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+
+  <div *ngIf="summary">
+    <h3>{{ summary.municipality }}</h3>
+    <p>Mayor: {{ summary.mayor || "No mayor found" }}</p>
+
+    <h4>Tasks</h4>
+    <ul>
+      <li *ngFor="let task of summary.tasks">
+        <strong>{{ task.status }}:</strong> {{ task.description }}
+      </li>
+    </ul>
+  </div>
+</div>
