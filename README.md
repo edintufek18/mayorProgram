@@ -2,4 +2,4 @@ Application for tracking mayor tasks
 
 The frontend code is in the 'frontend' branch 
 
-![mayorProgramDemo](https://github.com/user-attachments/assets/99062995-2974-4ea5-bc07-8f6038eef34e)
+![Adobe Express - mayorProgramDemo](https://github.com/user-attachments/assets/28855bf7-d29c-46ee-9a65-cb11b6edc57f)
