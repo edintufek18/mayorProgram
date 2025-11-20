@@ -2,5 +2,4 @@ Application for tracking mayor tasks
 
 The frontend code is in the 'frontend' branch 
 
-https://github.com/user-attachments/assets/935b843a-1c6c-4062-a4c8-20d9f721e190
-
+![mayorProgramDemo](https://github.com/user-attachments/assets/99062995-2974-4ea5-bc07-8f6038eef34e)
